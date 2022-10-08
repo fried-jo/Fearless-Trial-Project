@@ -6,14 +6,14 @@ const itemController = require('../controllers/itemController.js');
 const router = express.Router();
 
 //MVP
-router.get('/', (req, res) => {
-    return res.status(200);
+router.get('/', itemController.getItems, (req, res) => {
+    return res.status(200).send(res.locals.items);
 });
 router.post('/', itemController.createItem, (req, res) => {
     return res.status(201).send(res.locals.newItem);
 });
-router.delete('/', (req, res) => {
-    return res.status(200);
+router.delete('/', itemController.deleteItems, (req, res) => {
+    return res.status(200).send('You succesfully deleted all the items.');
 });
 
 //stretch

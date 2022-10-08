@@ -20,10 +20,12 @@ itemController.createItem = (req, res, next) => {
 }
 
 itemController.getItems = (req, res, next) => {
+    res.locals.items = mockDatabase;
     return next();
 }
 
 itemController.deleteItems = (req, res, next) => {
+    mockDatabase.length = 0;
     return next();
 }
 
