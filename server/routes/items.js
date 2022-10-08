@@ -1,5 +1,6 @@
 const express = require('express');
-const fileController = require('../controllers/fileController.js');
+//Now a stretch feature to be used with JSON object store
+// const fileController = require('../controllers/fileController.js');
 const itemController = require('../controllers/itemController.js');
 
 const router = express.Router();
