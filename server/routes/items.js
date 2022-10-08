@@ -8,23 +8,23 @@ const router = express.Router();
 //MVP
 router.get('/', (req, res) => {
     return res.status(200);
-})
-router.post('/', (req, res) => {
-    return res.status(201);
-})
+});
+router.post('/', itemController.createItem, (req, res) => {
+    return res.status(201).send(res.locals.newItem);
+});
 router.delete('/', (req, res) => {
     return res.status(200);
-})
+});
 
 //stretch
 router.get('/id', (req, res) => {
     return res.send(200);
-})
+});
 router.patch('/id', (req, res) => {
     return res.send(200);
-})
+});
 router.delete('/id', (req, res) => {
     return res.send(200);
-})
+});
 
 module.exports = router;
