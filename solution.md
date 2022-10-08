@@ -20,3 +20,5 @@ Delete an item by id (Delete request to '/items/id' with the 'id' as query param
 
 
 A future change that I would have liked to implement would be persisting data through an object store. This would require asynchronous interaction with the file system to access items.json, and was not possible within the time limits of the project. 
+
+The code is modularized to be able to be easily iterable and extensible. A client could be added to the root of the project without interfering with the server side. Additional controllers can be added to the controllers folder as necessary, and likewise with routes. 
