@@ -7,7 +7,7 @@ const itemRouter = require('./routes/items.js');
 app.use(express.json());
 
 //Use items router for requests to /items endpoint
-app.use('/items', itemRouter)
+app.use('/items', itemRouter);
 
 //Configure express global error handler
 app.use((err, req, res, next) => {
