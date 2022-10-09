@@ -1,4 +1,4 @@
-The solution can be tested by running 'npm test' from the command line in the project directory. The user can start the solution by running 'npm start' from the project directory -- the user will need node.js installed locally on their machine for this to work. 
+(Quick edit on 10/9/2022, please remember to clone the repo locally and then npm install to install dependencies :) )The solution can be tested by running 'npm test' from the command line in the project directory. The user can start the solution by running 'npm start' from the project directory -- the user will need node.js installed locally on their machine for this to work. 
 
 The project has been docker containerized successfully, and is able to be built and run with the following commands: 'docker build . -t <your username>/fearless' to build, and then 'docker run -p 49160:8080 -d <your username>/fearless'. However, I was not able to in the time allotted succesfully query the API inside the docker container.
 
